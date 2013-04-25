@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+describe("${1:Test Name}", function() {
+
+  var ctrl,
+      scope;
+      /* depServiceMock = {},
+      depMethodSpy = jasmine.createSpy(""); */
+
+  
+
+  // load the controller's module
+  beforeEach(module('${2:ApplicationName}'));
+  
+  /*beforeEach(module( function($provide){
+    $provide.value("depService", depServiceMock);
+  }) ); */
+
+  
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function($controller) {
+    scope = {};
+    ctrl = $controller('${3:ControllerName}Ctrl', {
+      \$scope: scope
+    }); 
+  })); 
+
+  it('Should ${4:Do what?}', function() {
+
+    ${5://body}
+  });
+});
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ctrltest</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
