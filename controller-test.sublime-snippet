@@ -1,34 +1,34 @@
 <snippet>
 	<content><![CDATA[
+
 describe("${1:Test Name}", function() {
+    var ctrl,
+    scope;
+    // depServiceMock = {},
+    // depMethodSpy = jasmine.createSpy("");
 
-  var ctrl,
-      scope;
-      // depServiceMock = {},
-      // depMethodSpy = jasmine.createSpy("");
 
-  
 
-  // load the controller's module
-  beforeEach(module('${2:ApplicationName}'));
-  
-  // beforeEach(module( function(\$provide){
-  //   \$provide.value("depService", depServiceMock);
-  // }) );
+    // load the controller's module
+    beforeEach(module('${2:ApplicationName}'));
 
-  
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function(\$controller) {
-    scope = {};
-    ctrl = \$controller('${3:ControllerName}Ctrl', {
-      \$scope: scope
-    }); 
-  })); 
+    // beforeEach(module( function(\$provide){
+    //   \$provide.value("depService", depServiceMock);
+    // }) );
 
-  it('Should ${4:Do what?}', function() {
 
-    ${5://body}
-  });
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function(\$controller) {
+        scope = $rootScope.$new();
+        ctrl = \$controller('${3:ControllerName}Ctrl', {
+        \$scope: scope
+      }); 
+    })); 
+
+    it('Should ${4:Do what?}', function() {
+
+        ${5://body}
+      });
 });
 
 
