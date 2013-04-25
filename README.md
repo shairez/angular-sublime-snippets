@@ -9,4 +9,4 @@ Available Shortcuts:
 ---------
 * `ctrltest` - Controller Unit Test
 
-This saved me years of typing, You're welcome... :)
+This will hopefully save years of typing... :)
