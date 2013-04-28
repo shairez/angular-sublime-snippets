@@ -1,6 +1,5 @@
 <snippet>
 	<content><![CDATA[
-
 describe("${1:Test Name}", function() {
     var ctrl,
     scope;
@@ -18,8 +17,8 @@ describe("${1:Test Name}", function() {
 
 
     // Initialize the controller and a mock scope
-    beforeEach(inject(function(\$controller) {
-        scope = $rootScope.$new();
+    beforeEach(inject(function(\$controller, \$rootScope) {
+        scope = \$rootScope.\$new();
         ctrl = \$controller('${3:ControllerName}Ctrl', {
         \$scope: scope
       }); 
