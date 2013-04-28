@@ -8,5 +8,6 @@ You can clone this repo to your sublime's "/packages/user" folder and start usin
 Available Shortcuts:
 ---------
 * `ctrltest` - Controller Unit Test
+* `dirtest` - Directive Unit Test
 
 This will hopefully save years of typing... :)
