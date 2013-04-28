@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+describe("${1:Directive Name}", function(){
+
+	var \$compile,
+		\$scope,
+		element;
+
+
+	beforeEach(module("${2:Module Name}"));
+
+	beforeEach(inject(["\$compile", "\$rootScope", function(\$c, \$rootScope){
+		
+		\$compile = \$c;
+		\$scope = \$rootScope;
+		element = angular.element("<${3:dir-name}></${3}>");
+
+		}]
+	))
+	describe("${4:Given an empty tag}", function() {
+	   it("${5:should display an empty tag}", function(){
+
+			\$compile(element)(scope);
+			\$scope.\$digest();
+			expect(element.html()).toBe("<div></div>");
+		})
+	});
+
+
+	// With Model ...
+
+	describe("A model pointing to a scope property", function() {
+
+	  	beforeEach(function(){
+	  		element.attr("${6:model}", "${7:model}");
+	  	});
+
+		it("${8:Should do stuff}", function() {
+			
+			// \$scope.model = "Test";
+			// \$compile(element)(scope);
+			// \$scope.$digest();
+			// expect(element.html()).toBe("<div></div>");
+
+		});
+
+	});
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dirtest</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
