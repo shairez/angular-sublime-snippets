@@ -9,6 +9,7 @@ Available Shortcuts:
 ---------
 * `ctrl` - Controller
 * `factory` - Factory
+* `const` - Constant
 * `ctrltest` - Controller Unit Test
 * `dirtest` - Directive Unit Test
 
