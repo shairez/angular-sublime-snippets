@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+angular.module("${1:appName}")
+.directive("${2:directiveName}", function() {
+	
+	return {
+		restrict: "A",
+		scope:{
+			${3://scope}	
+		},
+		// templateUrl: "",
+		link: function(scope, element, attrs){
+			${4:// link body}	
+		}
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>drv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
