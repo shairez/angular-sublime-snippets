@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+describe("${1:Test Name}", function() {
+    var service;
+    
+
+    // load the service's module
+    beforeEach(module('${2:ApplicationName}'));
+
+    // beforeEach(module( function(\$provide){
+    //   \$provide.value("depService", depServiceMock);
+    // }) );
+
+
+    // Assign the service
+    beforeEach(inject(["${3:fullServiceName}", function(${4:shortServiceName}) {
+        service = ${4};
+      }]); 
+    })); 
+
+    it('Should ${5:Do what?}', function() {
+
+        ${6://body}
+      });
+});
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>factorytest</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

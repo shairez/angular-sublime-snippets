@@ -13,5 +13,6 @@ Available Shortcuts:
 * `const` - Constant
 * `ctrltest` - Controller Unit Test
 * `dirtest` - Directive Unit Test
+* `factorytest` - Factory Unit Test
 
 This will hopefully save years of typing... :)
