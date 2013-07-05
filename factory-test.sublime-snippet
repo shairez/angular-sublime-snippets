@@ -15,8 +15,8 @@ describe("${1:Test Name}", function() {
     // Assign the service
     beforeEach(inject(["${3:fullServiceName}", function(${4:shortServiceName}) {
         service = ${4};
-      }]); 
-    })); 
+      }]) 
+    ); 
 
     it('Should ${5:Do what?}', function() {
 
